@@ -56,9 +56,7 @@ eliminar(contacto: Contacto) {
     }
   }
 }
-
 nuevo() {
   this.router.navigate(['pages/crear']);
 }
-
 }
