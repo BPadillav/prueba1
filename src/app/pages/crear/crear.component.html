@@ -1,0 +1,18 @@
+<aside class="crear">
+    <section>
+      <h2>Carreras</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" [(ngModel)]="contacto.nombre" name="nombre" required />
+        <label for="duracion">Duracion:</label>
+        <input type="text" id="duracion" [(ngModel)]="contacto.duracion" name="duracion" required />
+        <label for="titulo">Titulo:</label>
+        <input type="text" id="titulo" [(ngModel)]="contacto.titulo" name="titulo" required />
+        <label for="modalidad">Modalidad:</label>
+        <textarea id="modalidad" [(ngModel)]="contacto.modalidad" name="modalidad" required></textarea>
+  
+        <button (click)="guardar()">Guardar</button> 
+      </form>
+    </section>
+  </aside>
+  

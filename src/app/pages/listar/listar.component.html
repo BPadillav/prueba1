@@ -1,0 +1,21 @@
+ <span *ngIf="listadoContactos.length == 0"> 
+    No existen carreras  
+    <mat-slide-toggle>Slide me!</mat-slide-toggle>
+  </span>
+  
+  <ul>
+  
+    <li *ngFor="let contacto of listadoContactos">
+  
+      <!-- <a  (click)="editar"> {{contacto.nombre}} | {{contacto.duracion} 
+            | {{contacto.titulo}} | {{contacto.modalidad}}</a>  -->
+            
+            <a  (click)="editar(contacto)"> {{contacto.nombre}} | {{contacto.duracion}} 
+              | {{contacto.titulo}} | {{contacto.modalidad}</a>
+  
+             <button (click)="editar(contacto)"> Editar</button>   
+            
+      <button (click)="eliminar(contacto)"> Eliminar</button>     
+
+    </li>
+  </ul> 
